@@ -1,3 +1,5 @@
 difference between absolute and relative path
 define remote develoment
 why  Bracket pair colorization is important
+research what type prefixes means(feat, fix, docs, chore) during commit
+difference between --soft, --mixed and --hard

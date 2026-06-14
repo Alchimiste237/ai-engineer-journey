@@ -1,1 +1,24 @@
-Day 1 complete
+what type prefixes means(feat, fix, docs, chore) during commit?
+
+The standard prefixes refer to the following types of changes:
+feat: Stands for Feature. Used when you add a new feature or functionality to your application.
+fix: Stands for Fix. Used when you are patching or resolving a bug in your codebase.
+docs: Stands for Documentation. Used when you are updating or adding documentation, such as README files, wikis, or code comments.
+chore: Used for routine maintenance, build tasks, or updating dependencies that do not change your actual source code or test files
+
+difference between absolute and relative path?
+An absolute path specifies the exact location of a file or directory starting from the root of the file system. 
+A relative path specifies the location starting from your current working directory
+
+Remote develoment:
+Remote development refers to the practice of building software where the coding environment, dependencies, and source code live on a remote server or in the cloud, rather than on the developer's local machine.
+
+difference between --mixed, --soft and --hard
+Use --mixed when you need to un-stage changes but want to keep them in your working directory.
+Use --soft to keep all changes in the staging area and working directory while moving HEAD to a different commit.
+Use --hard to completely discard changes and reset everything to a specific commit.
+
+Why bracket colorization is important?
+Bracket pair colorization is important because
+it instantly untangles nested code, preventing syntax errors and reducing cognitive strain. By assigning unique colors to matching brackets, braces, and parentheses, developers can immediately track code scope and ensure 
+every opening character has a corresponding closing one
