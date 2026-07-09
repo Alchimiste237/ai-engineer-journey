@@ -28,9 +28,10 @@ class Product:
         return low_quantity_product
         
 
-    def save_product(self, filepath,product):
+    def save_product(self, filepath, product):
         with open(filepath, "w") as f:
-            json.dump(product, f,indent= 2)
+            json.dump(product, f, indent=2)
+            
             
 
     def add_product(self, id,name, price, quantity):
@@ -46,12 +47,12 @@ class Product:
         if products:
             
             for p in products:
-                if product["Id"] not in p['Id']:
-                    products.append(product)
-                    self.save_product("inventory.json",products)
-                    print(f"product {product['Name']}  added succesfull ")
-                else:
+                if product["Id"] == p["Id"]:
                     return f" iD {product['Id'] } already exist "
+            products.append(product)
+            self.save_product("inventory.json", products)
+            print(f"product {product['Name']}  added succesfull ")
+
 
         else:
             products.append(product)
@@ -74,7 +75,10 @@ class Product:
                 if low_product:
                     print("Low product identify, check the low stock report for more information")
                     self.save_product("low_stock_report.json", low_product)
-                return f" Product with ID {id} not found "
+                
+        return None
+
+
 
     
     
