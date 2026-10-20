@@ -70,4 +70,3 @@ if __name__ == "__main__":
     print(ft.has_frequency(2))  # True
     ft.remove(1)
     print(ft.has_frequency(2))  # False
-
